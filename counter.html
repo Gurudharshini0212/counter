@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Increment count</title>
+</head>
+<body>
+     <input type="button" value="count" id="countbutton"/>
+     <p>The button was pressed <span id="displaycount">0</span> times.</p>
+     <script type="text/javascript">
+     	var count = 0;
+     	var button = document.getElementById("countbutton");
+     	var display = document.getElementById("displaycount");
+     	button.onclick = function(){
+     		count++;
+     		display.innerHTML = count;
+     	}
+     </script>
+</body>
+</html>
